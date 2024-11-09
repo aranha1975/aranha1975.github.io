@@ -125,6 +125,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+    margin-bottom: 100px;
 }
 .content .buttons button {
     padding: 10px 20px;
