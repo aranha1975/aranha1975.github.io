@@ -19,6 +19,8 @@ body {
     width: 100%;
     text-align: center;
     padding: 10px 0;
+    margin: 0; /* Remove qualquer margem para encostar no topo e nas laterais */
+    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
 }
 .header img {
     width: 150px;
@@ -125,7 +127,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 20px; /* Ajuste conforme necessário */
-    margin-bottom: 50px; /* Adicione uma margem inferior para elevar os botões */
+    margin-bottom: 100px; /* Adicione uma margem inferior para elevar os botões */
 }
 .content .buttons button {
     padding: 10px 20px;
