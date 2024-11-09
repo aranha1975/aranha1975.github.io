@@ -180,5 +180,9 @@ body {
         font-size: 14px; /* Diminui o tamanho da fonte dos botões */
     }
 }
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+}
 
 
