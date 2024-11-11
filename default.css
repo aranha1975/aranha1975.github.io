@@ -5,7 +5,7 @@ body {
     background-color: #fff;
     box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura/altura */
 }
-}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -15,17 +15,24 @@ body {
     margin-bottom: 10px;
     
 }
+
 .header {
     background-color: #d32f2f;
     color: white;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
+    width: 100vw;
+    
+    padding: 10px;
     margin: 0; /* Remove qualquer margem para encostar no topo e nas laterais */
     box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
 }
+
+
 .header img {
-    width: 150px;
+    width: 10vw;
+    margin: 0;
+    vertical-align: middle;
+    
+    
 }
 .content {
     width: 100%;
