@@ -17,7 +17,7 @@ body {
     justify-content: center;
     margin: 0 auto; /* Centraliza horizontalmente */
     max-width: 1200px; /* Define uma largura máxima para o contêiner */
-    padding: 20px; /* Ajusta o padding conforme necessário */
+    padding: 0px; /* Ajusta o padding conforme necessário */
 }
 
 
