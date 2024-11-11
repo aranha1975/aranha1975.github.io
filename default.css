@@ -4,7 +4,7 @@ body {
     align-items: flex-start; /* Ajuste conforme necessário */
     margin: 0;
     padding: 0;
-    width: 100%; /* Garante que o body ocupe toda a largura */
+    width: 90%; /* Garante que o body ocupe toda a largura */
     box-sizing: border-box;
 }
 
