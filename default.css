@@ -44,7 +44,7 @@ body {
 .content {
     width: 100vw; /* Torna responsivo */
     max-width: 800px; /* Limite de largura em telas grandes */
-    padding: 20px;
+    padding: 0px;
     margin: 0 auto; /* Centraliza a `.content` */
 }
 
