@@ -172,7 +172,7 @@ body {
 @media (max-width: 768px) {
     .container {
         max-width: 100%; /* Permite que o contêiner use toda a largura disponível */
-        padding: 0px; /* Reduz o padding para caber melhor em telas menores */
+        padding: 20px; /* Reduz o padding para caber melhor em telas menores */
     }
 
     .header img {
