@@ -1,47 +1,52 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centraliza o contêiner */
+    align-items: flex-start; /* Ajuste conforme necessário */
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura/altura */
+    width: 100%; /* Garante que o body ocupe toda a largura */
 }
+
+
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 6px solid #d32f2f; /* Define uma borda vermelha com 2 pixels de espessura */
-    border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
-    margin-bottom: 10px;
-    
+    justify-content: center;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para o contêiner */
+    padding: 20px; /* Ajusta o padding conforme necessário */
 }
+
 
 .header {
     background-color: #d32f2f;
     color: white;
     width: 100vw;
-    
     padding: 10px;
-    margin: 0; /* Remove qualquer margem para encostar no topo e nas laterais */
-    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
+    margin: 0;
+    box-sizing: border-box;
+    display: flex; /* Adiciona flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
 }
+
 
 
 .header img {
-    width: 10vw;
-    margin: 0;
-    vertical-align: middle;
-    
-    
+    margin: 0; /* Remove qualquer margem */
+    width: 150px; /* Ajuste se necessário para manter a proporção */
+    max-width: 100%; /* Garante que não ultrapasse o contêiner */
 }
-.content {
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
 
+.content {
+    width: 90%; /* Torna responsivo */
+    max-width: 800px; /* Limite de largura em telas grandes */
+    padding: 20px;
+    margin: 0 auto; /* Centraliza a `.content` */
 }
+
 .content h2 {
     text-align: center;
     color: #d32f2f;
