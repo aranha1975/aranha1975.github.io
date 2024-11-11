@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%; /* Garante que o body ocupe toda a largura */
+    box-sizing: border-box;
 }
 
 
@@ -23,8 +24,8 @@ body {
 .header {
     background-color: #d32f2f;
     color: white;
-    width: 100vw;
-    padding: 10px;
+    width: 100%;
+    padding: 10px 0;
     margin: 0;
     box-sizing: border-box;
     display: flex; /* Adiciona flexbox */
@@ -41,7 +42,7 @@ body {
 }
 
 .content {
-    width: 90%; /* Torna responsivo */
+    width: 100vw; /* Torna responsivo */
     max-width: 800px; /* Limite de largura em telas grandes */
     padding: 20px;
     margin: 0 auto; /* Centraliza a `.content` */
@@ -175,12 +176,13 @@ body {
     }
 
     .header img {
-        width: 100px; /* Reduz o tamanho da imagem do cabeçalho para telas menores */
+        width: 80%; /* Ajuste conforme necessário para centralizar */
     }
 
     .content {
         padding: 15px; /* Ajusta o padding interno */
         margin-top: 10px; /* Reduz a margem superior */
+       
     }
 
     .sidebar {
