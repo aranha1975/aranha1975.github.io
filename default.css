@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura/altura */
+}
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid #d32f2f; /* Define uma borda vermelha com 2 pixels de espessura */
+    border-radius: 8px; /* Adiciona bordas arredondadas (opcional) */
+    margin-bottom: 10px;
+    
+}
+.header {
+    background-color: #d32f2f;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0; /* Remove qualquer margem para encostar no topo e nas laterais */
+    box-sizing: border-box; /* Garante que o padding não ultrapasse a largura */
+}
+.header img {
+    width: 150px;
+}
+.content {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+
+}
+.content h2 {
+    text-align: center;
+    color: #d32f2f;
+    text-decoration: underline;
+    font-size: 25px;
+    
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    ;
+    
+}
+
+.table th {
+    background-color: #f2f2f2;
+    font-size: 14px;
+    
+    
+}
+
+.input-cell {
+    width: 85%;
+    border: none;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    font-size: 14px;
+    padding: 5px;
+    
+}
+
+
+.content h3 {
+    text-align: center;
+    margin-top: 25px;
+    
+}    
+.content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+.content input[type="checkbox"],
+.content input[type="text"] {
+    margin-bottom: 6ppx; /* Reduzido para metade do espaçamento atual */
+}
+.input-text {
+    width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+.section label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px; /* Adiciona espaçamento entre os elementos */
+}
+
+.section input[type="text"] {
+    margin-left: 10px; /* Espaçamento entre o texto e a caixa de entrada */
+    flex: 1; /* Faz com que a caixa de texto se expanda conforme necessário */
+}
+
+
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5px; /* Ajustando para metade do espaçamento atual */
+}
+.checkbox-group label input {
+    margin-right: 10px;
+}
+.content .checkbox-group-title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.content .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-bottom: 100px; /* Adicione uma margem inferior para elevar os botões */
+}
+.content .buttons button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Altera a largura para ocupar a parte inferior da tela */
+    height: 65px; /* Ajuste a altura conforme necessário */
+    background-color: #d32f2f;
+    display: flex;
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza os ícones */
+    align-items: center; /* Alinha verticalmente */
+    padding-top: 0; /* Remove o padding superior */
+}
+.sidebar img {
+    width: 30px;
+    margin: 0 10px; /* Ajusta o espaçamento horizontal */
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Permite que o contêiner use toda a largura disponível */
+        padding: 10px; /* Reduz o padding para caber melhor em telas menores */
+    }
+
+    .header img {
+        width: 100px; /* Reduz o tamanho da imagem do cabeçalho para telas menores */
+    }
+
+    .content {
+        padding: 15px; /* Ajusta o padding interno */
+        margin-top: 10px; /* Reduz a margem superior */
+    }
+
+    .sidebar {
+        height: 50px; /* Diminui a altura da barra inferior */
+    }
+
+    .sidebar img {
+        width: 30px; /* Aumente o tamanho para um valor mais adequado */
+        margin: 0 8px; /* Ajuste o espaçamento horizontal */
+    }
+
+    .content .buttons button {
+        padding: 8px 16px; /* Reduz o tamanho dos botões */
+        font-size: 14px; /* Diminui o tamanho da fonte dos botões */
+    }
+}
+img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+}
+@media (max-width: 768px) {
+    .header {
+        width: 100%; /* Garante que a largura seja 100% em telas pequenas */
+        margin: 0;
+        padding: 0; /* Remove qualquer padding adicional */
+    }
+}
+
+
+
