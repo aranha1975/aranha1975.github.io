@@ -4,7 +4,7 @@ body {
     align-items: flex-start; /* Ajuste conforme necessário */
     margin: 0;
     padding: 0;
-    width: 90%; /* Garante que o body ocupe toda a largura */
+    width: 100%; /* Garante que o body ocupe toda a largura */
     box-sizing: border-box;
 }
 
@@ -172,7 +172,7 @@ body {
 @media (max-width: 768px) {
     .container {
         max-width: 100%; /* Permite que o contêiner use toda a largura disponível */
-        padding: 10px; /* Reduz o padding para caber melhor em telas menores */
+        padding: 0px; /* Reduz o padding para caber melhor em telas menores */
     }
 
     .header img {
