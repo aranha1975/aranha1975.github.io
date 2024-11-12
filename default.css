@@ -115,7 +115,15 @@ body, html {
 .input-text {
     width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
     box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    text-align: center;
 }
+#campoevolucao.input-text {
+    height: 200px;
+    width: 100%; /* Ajusta para ocupar 100% da largura do contêiner */
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+    text-align: center;
+}
+
 
 .section label {
     display: flex;
