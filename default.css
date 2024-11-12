@@ -17,10 +17,19 @@ body, html {
     align-items: center;
     justify-content: center;
     margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 800px; /* Define uma largura máxima para o contêiner */
+    max-width: 600px; /* Define uma largura máxima para o contêiner */
     padding: 0px; /* Ajusta o padding conforme necessário */
     max-width: 100%;
     width: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    width: 100%; /* Torna responsivo */
+    max-width: 600px; /* Limite de largura em telas grandes */
+    padding: 20px;
+    
+    margin: 0 auto; /* Centraliza a `.content` */
     box-sizing: border-box;
 }
 
@@ -46,14 +55,7 @@ body, html {
     height: auto; /* Mantém a proporção */
 }
 
-.content {
-    width: 100%; /* Torna responsivo */
-    max-width: 100%; /* Limite de largura em telas grandes */
-    padding: 20px;
-    padding-right: 60px;
-    margin: 0 auto; /* Centraliza a `.content` */
-    box-sizing: border-box;
-}
+
 
 .content h2 {
     text-align: center;
