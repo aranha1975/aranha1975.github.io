@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PAI - Login</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #d32f2f;
+        }
+        .container {
+            margin-top: 100px;
+            width: 90%;
+            max-width: 400px;
+            background-color: #f3f3f3;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            position: absolute;
+            margin-top: -400px;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            padding-left: 40px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #e0e0e0;
+        }
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #888;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Tela de Login -->
+<div class="logo">
+    <img src="PaiLogoHorizontalTransp.png" alt="Logo PAI">
+</div>
+
+<div class="container login-container">
+    <h1>Login</h1>
+    
+    <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" id="username" placeholder="Usuário">
+    </div>
+    <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="password" placeholder="Senha">
+    </div>
+    <button class="btn" onclick="login()">ENTRAR</button>
+</div>
+
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Verifica se os campos de login foram preenchidos
+        if (username === '' || password === '') {
+            alert('Por favor, preencha todos os campos.');
+        } else {
+            // Armazenando o nome de usuário no LocalStorage
+            localStorage.setItem('username', username);
+
+            // Redireciona para a página do perfil
+            window.location.href = '00.Queixas2.html';
+        }
+    }
+</script>
+
+<!-- Inclua este link para usar ícones do Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
