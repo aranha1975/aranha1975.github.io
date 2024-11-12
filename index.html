@@ -1,57 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Motivo Do Atendimento</title>
+    <title>PAI - Login</title>
     <link rel="stylesheet" href="default.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #d32f2f;
+        }
+        .container {
+            margin-top: 100px;
+            width: 90%;
+            max-width: 400px;
+            background-color: #f3f3f3;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo {
+            position: absolute;
+            margin-top: -400px;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            padding-left: 40px;
+            font-size: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #e0e0e0;
+        }
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #888;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #d32f2f;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
 </head>
 <body>
-    <div class="sidebar" >
-        
-        <a href="inicial.html"><img src="inicial.png" alt="Inicial"></a>
-        <a href="circulatorio.html"><img src="circulatorio.png" alt="Circulatório"></a>
-        <a href="neuro.html"><img src="neuro.png" alt="Neuro"></a>
-        <a href="evolucao.html"><img src="evolucao.png" alt="Evolução"></a>
-        <a href="parametros.html"><img src="parametros.png" alt="Parâmetros"></a>
-        <a href="#"><img src="salvar.png" alt="Salvar"></a> <!-- Ícone de salvar -->
-    
-    </div>
 
-    <div class="container">
-        <div class="header">
-            <img src="PaiLogoHorizTransp.png" alt="PAI Logo">
-        </div>
-        <div class="content">
-            <h2>Motivo Do Atendimento</h2>
-            
-            <input type="text" id="campo" class="input-text" placeholder="Descreva o motivo do atendimento">
-            <h3>Principais Queixas</h3>
-            <div class="checkbox-group">
-                <label><input type="checkbox"> Dificuldade Respiratória</label>
-                <label><input type="checkbox"> Febre</label>
-                <label><input type="checkbox"> Náuseas</label>
-                <label><input type="checkbox"> Alergia</label>
-                <label><input type="checkbox"> Vômitos</label>
-                <label><input type="checkbox"> Tonturas</label>
-                <label><input type="checkbox"> Dor - Local</label>
-                <label><input type="checkbox"> Outro</label>
-            </div>
-            <h3>Estado Inicial</h3>
-            <div class="checkbox-group">
-                <label><input type="checkbox"> Leve</label>
-                <label><input type="checkbox"> Moderado</label>
-                <label><input type="checkbox"> Grave</label>
-                <label><input type="checkbox"> Estável</label>
-                <label><input type="checkbox"> Crítico</label>
-                <label><input type="checkbox"> Instável</label>
-            </div>
-            <div class="buttons">
-                <button>Anterior</button>
-                <a href="01.inicial2.html"><button>Próximo</button></a>
-            </div>
-        </div>
+<!-- Tela de Login -->
+<div class="logo">
+    <img src="PaiLogoHorizontalTransp.png" alt="Logo PAI">
+</div>
+
+<div class="container login-container">
+    <h1>Login</h1>
+    
+    <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" id="username" placeholder="Usuário">
     </div>
+    <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="password" placeholder="Senha">
+    </div>
+    <button class="btn" onclick="login()">ENTRAR</button>
+</div>
+
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Verifica se os campos de login foram preenchidos
+        if (username === '' || password === '') {
+            alert('Por favor, preencha todos os campos.');
+        } else {
+            // Armazenando o nome de usuário no LocalStorage
+            localStorage.setItem('username', username);
+
+            // Redireciona para a página do perfil
+            window.location.href = '00.Queixas2.html';
+        }
+    }
+</script>
+
+<!-- Inclua este link para usar ícones do Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </body>
 </html>
