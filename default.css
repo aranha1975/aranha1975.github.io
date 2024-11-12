@@ -213,7 +213,7 @@ img {
 
     .sidebar img {
         width: 35px; /* Aumente o tamanho para um valor mais adequado */
-        margin: 0 12px; /* Ajuste o espaçamento horizontal */
+        margin: 0 10px; /* Ajuste o espaçamento horizontal */
     }
 
     .content .buttons button {
