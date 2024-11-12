@@ -235,11 +235,14 @@ img {
         padding: 8px 16px; /* Reduz o tamanho dos botões */
         font-size: 14px; /* Diminui o tamanho da fonte dos botões */
     }
+    .input-cell {
+        font-size: 10px; /* Reduz o tamanho da fonte para dispositivos móveis */
+    }
 
-img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
-    height: auto; /* Mantém a proporção */
-}
+    img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+        height: auto; /* Mantém a proporção */
+    }
 @media (max-width: 768px) {
     .header {
         width: 100%; /* Garante que a largura seja 100% em telas pequenas */
