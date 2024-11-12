@@ -158,7 +158,7 @@ body {
     bottom: 0;
     left: 0;
     width: 100%; /* Mantém a largura total */
-    height: 80px; /* Ajuste conforme necessário */
+    height: 100px; /* Ajuste conforme necessário */
     background-color: #d32f2f;
     display: flex;
     flex-direction: row; /* Itens alinhados horizontalmente */
@@ -187,6 +187,7 @@ body {
         width: 100%; /* Garante que a largura se ajuste bem em dispositivos menores */
         padding: 10px; /* Reduz o padding interno */
         margin-bottom: 80px; /* Adiciona espaço para a `sidebar` inferior */
+       
     }
 
     .sidebar {
