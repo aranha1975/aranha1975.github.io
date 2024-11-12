@@ -157,34 +157,36 @@ body {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%; /* Altera a largura para ocupar a parte inferior da tela */
-    height: 65px; /* Ajuste a altura conforme necessário */
+    width: 100%; /* Mantém a largura total */
+    height: 65px; /* Ajuste conforme necessário */
     background-color: #d32f2f;
     display: flex;
-    flex-direction: row; /* Alinha os itens horizontalmente */
-    justify-content: center; /* Centraliza os ícones */
-    align-items: center; /* Alinha verticalmente */
-    padding-top: 0; /* Remove o padding superior */
+    flex-direction: row; /* Itens alinhados horizontalmente */
+    justify-content: center; /* Distribui os ícones com espaçamento uniforme */
+    align-items: center;
+    padding: 0;
+    z-index: 1000;
 }
+
 .sidebar img {
-    width: 30px;
-    margin: 0 10px; /* Ajusta o espaçamento horizontal */
+    width: 40px; /* Ajuste conforme o tamanho desejado */
+    margin: 0 12px; /* Reduz a margem horizontal entre os ícones */
 }
+
 @media (max-width: 768px) {
     .container {
-        max-width: 100%; /* Permite que o contêiner use toda a largura disponível */
-        padding: 20px; /* Reduz o padding para caber melhor em telas menores */
+        width: 100%; /* Permite que o contêiner use toda a largura disponível */
+        padding: 10px; /* Ajusta o padding para telas menores */
     }
 
     .header img {
-        width: 80%; /* Ajuste conforme necessário para centralizar */
+        width: 80%; /* Ajusta o tamanho da imagem do cabeçalho para dispositivos móveis */
     }
 
     .content {
-        padding: 20px; /* Ajusta o padding interno */
-        padding-right: 50px;
-        margin-top: 10px; /* Reduz a margem superior */
-       
+        width: 100%; /* Garante que a largura se ajuste bem em dispositivos menores */
+        padding: 10px; /* Reduz o padding interno */
+        margin-bottom: 80px; /* Adiciona espaço para a `sidebar` inferior */
     }
 
     .sidebar {
@@ -192,15 +194,15 @@ body {
     }
 
     .sidebar img {
-        width: 30px; /* Aumente o tamanho para um valor mais adequado */
-        margin: 0 8px; /* Ajuste o espaçamento horizontal */
+        width: 40px; /* Aumente o tamanho para um valor mais adequado */
+        margin: 10px; /* Ajuste o espaçamento horizontal */
     }
 
     .content .buttons button {
         padding: 8px 16px; /* Reduz o tamanho dos botões */
         font-size: 14px; /* Diminui o tamanho da fonte dos botões */
     }
-}
+
 img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
     height: auto; /* Mantém a proporção */
@@ -212,6 +214,6 @@ img {
         padding: 0; /* Remove qualquer padding adicional */
     }
 }
-
+}
 
 
