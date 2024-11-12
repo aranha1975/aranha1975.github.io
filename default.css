@@ -190,12 +190,12 @@ body {
     }
 
     .sidebar {
-        height: 50px; /* Diminui a altura da barra inferior */
+        height: 80px; /* Diminui a altura da barra inferior */
     }
 
     .sidebar img {
-        width: 40px; /* Aumente o tamanho para um valor mais adequado */
-        margin: 10px; /* Ajuste o espaçamento horizontal */
+        width: 35px; /* Aumente o tamanho para um valor mais adequado */
+        margin: 0 12px; /* Ajuste o espaçamento horizontal */
     }
 
     .content .buttons button {
