@@ -1,4 +1,4 @@
-body {
+body, html {
     display: flex;
     justify-content: center; /* Centraliza o contêiner */
     align-items: flex-start; /* Ajuste conforme necessário */
@@ -6,6 +6,7 @@ body {
     padding: 0;
     width: 100%; /* Garante que o body ocupe toda a largura */
     box-sizing: border-box;
+    overflow-x: hidden; /* Evita a rolagem horizontal */
 }
 
 
@@ -18,6 +19,9 @@ body {
     margin: 0 auto; /* Centraliza horizontalmente */
     max-width: 1200px; /* Define uma largura máxima para o contêiner */
     padding: 0px; /* Ajusta o padding conforme necessário */
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 
@@ -39,14 +43,16 @@ body {
     margin: 0; /* Remove qualquer margem */
     width: 200px; /* Ajuste se necessário para manter a proporção */
     max-width: 100%; /* Garante que não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção */
 }
 
 .content {
-    width: 100vw; /* Torna responsivo */
-    max-width: 800px; /* Limite de largura em telas grandes */
+    width: 100%; /* Torna responsivo */
+    max-width: 100%; /* Limite de largura em telas grandes */
     padding: 20px;
     padding-right: 60px;
     margin: 0 auto; /* Centraliza a `.content` */
+    box-sizing: border-box;
 }
 
 .content h2 {
@@ -120,7 +126,10 @@ body {
     flex: 1; /* Faz com que a caixa de texto se expanda conforme necessário */
 }
 
-
+img {
+    max-width: 100%; /* Impede que as imagens ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção */
+}
 
 .checkbox-group {
     display: flex;
@@ -172,6 +181,8 @@ body {
 .sidebar img {
     width: 35px; /* Ajuste conforme o tamanho desejado */
     margin: 0 10px; /* Reduz a margem horizontal entre os ícones */
+    max-width: 100%; /* Impede que as imagens ultrapassem a largura do contêiner */
+    height: auto; /* Mantém a proporção */
 }
 
 @media (max-width: 700px) {
