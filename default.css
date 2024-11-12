@@ -207,7 +207,8 @@ img {
 
     .sidebar {
         height: 80px; /* Diminui a altura da barra inferior */
-        padding: 10px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
     .sidebar img {
