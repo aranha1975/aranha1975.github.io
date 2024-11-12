@@ -70,6 +70,7 @@ body, html {
     margin-bottom: 20px;
     overflow-x: hidden;
     box-sizing: border-box;
+    max-width: 100%; /* Impede que ultrapassem a largura do dispositivo */
     
 }
 
