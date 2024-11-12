@@ -200,7 +200,7 @@ img {
 
     .content {
         width: 100%; /* Garante que a largura se ajuste bem em dispositivos menores */
-        padding: 10px; /* Reduz o padding interno */
+        padding: 20px; /* Reduz o padding interno */
         margin-bottom: 0; /* Adiciona espaço para a `sidebar` inferior */
        
     }
