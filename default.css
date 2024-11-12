@@ -174,7 +174,7 @@ body {
     margin: 0 10px; /* Reduz a margem horizontal entre os ícones */
 }
 
-@media (max-width: 760px) {
+@media (max-width: 700px) {
     .container {
         width: 100%; /* Permite que o contêiner use toda a largura disponível */
         padding: 10px; /* Ajusta o padding para telas menores */
