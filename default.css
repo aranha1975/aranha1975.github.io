@@ -17,7 +17,7 @@ body, html {
     align-items: center;
     justify-content: center;
     margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 1200px; /* Define uma largura máxima para o contêiner */
+    max-width: 800px; /* Define uma largura máxima para o contêiner */
     padding: 0px; /* Ajusta o padding conforme necessário */
     max-width: 100%;
     width: 100%;
