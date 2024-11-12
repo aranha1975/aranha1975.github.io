@@ -64,14 +64,17 @@ body, html {
     font-size: 25px;
     
 }
-.table.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    overflow-x: hidden;
+.table-responsive {
+    overflow-x: auto; /* Adiciona rolagem horizontal quando necessário */
+    width: 100%; /* Garante que o contêiner use toda a largura */
     box-sizing: border-box;
-    max-width: 100%; /* Impede que ultrapassem a largura do dispositivo */
-    
+}
+
+.table {
+    width: 100%; /* Faz a tabela usar a largura completa do contêiner */
+    max-width: 100%; /* Impede que a tabela ultrapasse a largura */
+    border-collapse: collapse; /* Remove os espaços entre as células */
+    box-sizing: border-box;
 }
 
 .table th, .table td {
