@@ -195,13 +195,18 @@ img {
     z-index: 1000;
     
 }
-
 .sidebar img {
     width: 35px; /* Ajuste conforme o tamanho desejado */
     margin: 0 10px; /* Reduz a margem horizontal entre os ícones */
     max-width: 100%; /* Impede que as imagens ultrapassem a largura do contêiner */
     height: auto; /* Mantém a proporção */
 }
+.sidebar-item.active img {
+    border: 2px solid #3498db; /* Cor de destaque */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
 
 @media (max-width: 700px) {
     .container {

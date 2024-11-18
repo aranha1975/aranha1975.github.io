@@ -2,6 +2,20 @@ document.addEventListener('DOMContentLoaded', function() {
     receberMensagens();
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Obtém o nome do arquivo atual
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Seleciona todos os links da sidebar
+    const sidebarLinks = document.querySelectorAll(".sidebar-item");
+
+    // Itera pelos links e adiciona a classe 'active' ao correspondente
+    sidebarLinks.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
 
 function login() {
     const username = document.getElementById('username').value;
