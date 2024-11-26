@@ -260,6 +260,7 @@ fieldset legend {
         max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
         height: auto; /* Mantém a proporção */
     }
+}
 @media (max-width: 768px) {
     .header {
         width: 100%; /* Garante que a largura seja 100% em telas pequenas */

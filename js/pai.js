@@ -35,7 +35,7 @@ function login() {
         console.log(resposta)
     
         if (resposta == true) {
-            window.location.href = '00.Queixas2.html';
+            window.location.href = '000.dadospaciente2.html';
         } 
         else {
             alert('E-mail e/ou Senha inválidos');
